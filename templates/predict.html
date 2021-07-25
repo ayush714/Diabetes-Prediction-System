@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction </title>
+</head>
+<body>
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row justify-content-md-center mb-4">
+        <h3 class='text-primary'>Prediction is {{ prediction }}</h3>
+    
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="thumbnail">
+            {% if prediction == [0] %}
+                <img src="{{url_for('static', filename='0.png')}}" class="img-thumbnail" /> 
+                <h1>You don't have Diabetes.</h1>
+            {% endif %}
+        </div>
+    </div>
+        
+    <div class="row justify-content-md-center">
+        <div class="thumbnail">
+            {% if prediction == [1] %}
+                <img src="{{url_for('static', filename='1.png')}}" class="img-thumbnail" /> 
+                <h1>You have Diabetes, please consult a Doctor.</h1>
+            {% endif %}
+        </div>
+
+{% endblock %}
+
+</body>
+</html>
