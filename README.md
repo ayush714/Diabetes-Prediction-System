@@ -42,8 +42,7 @@ cindex = concordant + 0.5 x ties / permissible
 - A higher c-index indicates that the model's prediction is in agreement with the actual outcomes of a pair of patients.
 
 **Results**:- 
-'|    | Models         |\n|---:|:---------------|\n|  0 | Decision Trees |\n|  1 | Random Forest  |\n|  2 | XGboost        |\n|  3 | Catboost       |'
-
+![image](https://user-images.githubusercontent.com/81796368/126901036-3d9d1bbd-04f9-457e-9c5d-f54e0830d031.png)
 
 
 ## Contributing
